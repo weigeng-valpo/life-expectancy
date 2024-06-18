@@ -17,7 +17,7 @@ library(tidyverse)
 library(broom)
 
 # Data import
-le_data <- read_csv("./data/Life-expectancy-by-state-long.csv")
+le_data <- read_csv("/Volumes/Data Science HD/SER_Workshop_2024/Git/life-expectancy/data/Life-expectancy-by-state-long.csv")
 
 # Run a regression model with time coded using a linear term
 mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "California", race == "black", sex == "Female"))
